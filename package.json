@@ -1,0 +1,37 @@
+{
+  "name": "laboratory-database-node-mongodb",
+  "version": "1.0.0",
+  "description": "There is laboratorna for cource database",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "debug": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiy-ta/laboratory-database-node-mongodb.git"
+  },
+  "keywords": [
+    "database",
+    "mongodb",
+    "node",
+    "typescript",
+    "cource"
+  ],
+  "author": "Serhii Tarlev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiy-ta/laboratory-database-node-mongodb/issues"
+  },
+  "homepage": "https://github.com/sergiy-ta/laboratory-database-node-mongodb#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.7",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  }
+}
