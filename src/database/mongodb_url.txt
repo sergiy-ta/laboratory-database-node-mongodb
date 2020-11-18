@@ -1,0 +1,1 @@
+mongodb+srv://user:user-password@cluster0.hve7f.mongodb.net/COURCEDATABASE?retryWrites=true&w=majority
