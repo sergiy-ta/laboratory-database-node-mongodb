@@ -9,6 +9,6 @@ export default interface Project {
     };
     user_list: User[] | {
         _id: string;
-    };
+    }[];
     readonly date_of_creation: Date;
 }
