@@ -24,7 +24,11 @@ export default class ProjectDatabase implements ProjectClass {
                     responsible_for_the_project: {
                         _id: new ObjectID(responsible_for_the_project._id.toString())
                     },
-                    user_list: [],
+                    user_list: [
+                        {
+                            _id: new ObjectID(responsible_for_the_project._id.toString())
+                        }
+                    ],
                     date_of_creation: new Date(new Date().toISOString())
                 }, (error: any, data: any) => {
                     if (!error) resolve(data['ops'][0] ?? null);
@@ -84,7 +88,7 @@ export default class ProjectDatabase implements ProjectClass {
                 client.db(database.dbProjects).collection(this.collection).findOneAndUpdate({ 
                     _id: new ObjectID(id) 
                 }, {'$push': {
-                    user: {
+                    user_list: {
                         _id: new ObjectID(user._id.toString())
                     }
                 }}, (error: any, user: any) => {

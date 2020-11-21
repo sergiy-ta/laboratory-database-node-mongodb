@@ -22,7 +22,7 @@ export default class BudgetDatabase implements BudgetClass {
                 client.db(database.dbBudgets).collection(this.collection).insertOne({
                     company: { _id: new ObjectID(company._id) },
                     number: number,
-                    currency: { _id: new ObjectID(currency._id) },
+                    currency: { _id: currency._id },
                     date_of_creation: new Date(new Date().toISOString())
                 }, (error: any, data: any) => {
                     if (!error) resolve(data['ops'][0] ?? null);
